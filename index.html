@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- made by: Sebastian -->
+    <h1>Hangman</h1>
+
+    <div class="box">
+        <h2>How to play</h2>
+        <p>The computer picks a secret word. Click on the letters to guess the word.</p>
+        <p>If the letter is in the word it will show up. If not you lose a life.</p>
+        <p>You have 6 lives. Guess the word before you run out!</p>
+    </div>
+
+    <!-- made by: Yordan -->
+    <div class="box">
+        <!-- hangman picture - made by: Alexandru, changes on every wrong guess -->
+        <img id="hangman" src="images/hangman-0.svg" alt="hangman">
+
+        <p id="lives">Lives: 6</p>
+        <p id="word"></p>
+        <p id="message"></p>
+        <div id="letters"></div>
+        <button id="newGame">New game</button>
+    </div>
+
+    <!-- made by: Luchiano -->
+    <div class="box">
+        <h2>Score</h2>
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+        <button id="reset">Reset score</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
